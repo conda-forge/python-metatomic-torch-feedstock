@@ -44,12 +44,12 @@ requirements:
     # `run_exports` are variant agnostic
     - libtorch * cpu*
     - libmetatomic-torch {{ version }}
-    - python-metatensor-torch >=0.7.6,<0.8   # [build_platform == target_platform]
+    - python-metatensor-torch >=0.8.0,<0.9   # [build_platform == target_platform]
   run:
     - python
     - pytorch
     - libmetatomic-torch {{ version }}
-    - python-metatensor-torch >=0.7.6,<0.8
+    - python-metatensor-torch >=0.8.0,<0.9
     - python-metatensor-operations >=0.3.3,<0.4.0
     - python-vesin
 
