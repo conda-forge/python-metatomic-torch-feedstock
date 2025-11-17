@@ -50,7 +50,7 @@ requirements:
     - pytorch
     - libmetatomic-torch {{ version }}
     - python-metatensor-torch >=0.8.0,<0.9
-    - python-metatensor-operations >=0.3.3,<0.4.0
+    - python-metatensor-operations >=0.4.0,<0.5
     - python-vesin
 
 test:
