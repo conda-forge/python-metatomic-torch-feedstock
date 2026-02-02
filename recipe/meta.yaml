@@ -27,7 +27,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pytorch                                # [build_platform != target_platform]
-    - python-metatensor-torch >=0.7.6,<0.8   # [build_platform != target_platform]
+    - python-metatensor-torch >=0.8.0,<0.9   # [build_platform != target_platform]
     # Nothing will be built but we need a correct env to make pip happy
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
