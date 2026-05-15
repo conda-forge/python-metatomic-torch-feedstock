@@ -1,5 +1,5 @@
 {% set name = "metatomic-torch" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/metatomic_torch-{{ version }}.tar.gz
-  sha256: 540171dd03de84cb11b46a750bf016eb57dca756b5adf0383cefffbc9117e95f
+  sha256: a93e165f907500618f3b42c0c7c5c2e954a446347227001a80cbda293ea22f11
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   script_env:
     # Don't build metatomic-torch, but use the already compiled `libmetatomic-torch`
     # package
