@@ -1,5 +1,5 @@
 {% set name = "metatomic-torch" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.19" %}
 
 package:
   name: python-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/metatomic_torch-{{ version }}.tar.gz
-  sha256: bcd66d286239c9cf5da3e69e8f36fec41a80770708e3590e18b83e7a4461faa3
+  sha256: f16767748d725730dc2fe89103fbc6edccada7c8016cc6bf12ca016b9a1709e7
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
